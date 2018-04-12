@@ -1,0 +1,143 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+
+
+\usepackage[section]{placeins}
+
+\usepackage{datagidx}
+\newgidx{glossary}{Glossary}
+\newgidx{acronym}{Acronyms}
+\newgidx{symbol}{Symbols}
+
+\DTLgidxSetDefaultDB{acronym}
+\DTLgidxSetDefaultDB{glossary}
+
+\usepackage{color, colortbl}
+\definecolor{aquamarine}{rgb}{0.498039, 1, 0.831373}
+\definecolor{ghostwhite}{rgb}{0.972549, 0.972549, 1}
+
+\usepackage[english]{babel}
+%\usepackage{import}
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\chapterfont{\color{blue}}  % sets colour of chapters
+\sectionfont{\color{cyan}}  % sets colour of sections
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan
+}
+
+
+
+\DTLgidxSetDefaultDB{glossary}
+	\newterm[description = {Is the scientific study of behavior and mental processes}]{psychology}
+	
+	\newterm[description = {The use of systematic methods to observe, describe, predict, and explain behavior}]{science}
+	
+	\newterm[description = {Everything we do that can be directory observed}]{behavior}
+		
+	\newterm[description = {The thoughts, felling and motives that each of us experiences privately but that can not be observed directly}]{mental processes}
+	
+	
+	\newterm[description = {Who the person that do analyze people's problems and try to help them cope more effectively}]{psychologist}
+	
+	\newterm[description = {A fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.}]{phenomena}
+		
+	\newterm[description = {trained in psychological psychology and neurosceince injects epinephrine into a rat that has learned a maze to determine how the hormone affects the rat's memory.}]{research psychologist}
+	
+	\newterm[description = {probes a depressed client's throughts for clues about the cause of the depression and thinks about ways to help the client become psychologically healthier.}]{clinical psychologist}
+	
+	\newterm[description = {is a trial consultant who prepares witnesses to testify and teaches attcmeys how to present themseleves to jurors}]{forensic psychologist}
+	
+	\newterm[description = {are usually seated at the entrance of an office and do a variety of administrative tasks including, but not limited to, answering phones calls, making photocopies, distributing mail, signing for packages, and general office upkeep. Some companies employ a receptionist for the sole purpose of answering phones, but with the advancement of technology, digital answering services and outsourced receptionist firms are the new wave of the future. }] {Receptionists}
+	
+	\newterm[description = {is a collection of related data}] {database}
+	
+	\newterm[description = {The ER model describes data as entities,relationships, and attributes}] {entity relationship model}
+	
+	\newterm[description = {the most popular Open Source SQL database management system, is developed, distributed, and supported by Oracle Corporation.}] {MYSQL}
+	
+	\newterm[description ={ the proportion of time that the system is functional and working.}] {Availability}
+	
+	\newterm[description = { the consistency and coherence of the overall design.}] {Conceptual integrity}
+	
+	\newterm[description = {is the ability of a system or different systems to operate successfully by communicating and exchanging information with other external systems written and run by external parties.}] {Interoperability}
+	
+	\newterm[description = {is the ability of the system to under go changes with a degree of ease.}] {Maintainability}
+	
+	\newterm[description = {how easy it is for system administrators to manage the application, usually through sufficient and useful instrumentation exposed for use in monitoring systems and for debugging and performance tuning.}] {Manageability}
+	
+	\newterm[description = {s an indication of the responsiveness of a system to execute specific actions in a given time interval.}] {Performance}
+	
+	\newterm[description = {s the ability of a system to continue operating in the expected way over time.}] {Reliability}
+	
+	\newterm[description = {is the probability that a component will be used in other components or scenarios to add new functionality with little or no change.}] {Reusability}
+	
+	\newterm[description = {is ability of a system to either handle increases in load without impact on the performance of the system, or the ability to be readily enlarged.}] {Scalability}
+	
+	\newterm[description = {is the capability of a system to reduce the chance of malicious or accidental actions outside of the designed usage affecting the system, and prevent disclosure or loss of information.}] {Security}
+	
+	\newterm[description = {is the ability of the system to provide information helpful for identifying and resolving issues when it fails to work correctly.}] {Supportability}
+	
+	\newterm[description = {is a measure of how well system or components allow you to create test criteria and execute tests to determine if the criteria are met.}] {Testability}
+	
+	\newterm[description = {The application interfaces must be designed with the user and consumer in mind so that they are intuitive to use, can be localized and globalized, provide access for disabled users, and provide a good overall user experience. }] {User Experience / Usability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Acronyms 
+	\DTLgidxSetDefaultDB{acronym}	
+	\newacro{SSN}{Social Security Number}
+	
+	\newacro{DB}{Database}
+	\newacro{DoS}{Denial of Service}
+	\newacro{SRS}{Software Requirements Specification}
+	\newacro{DBMS}{Database Management System}
+	\newacro{JSP}{Java Server Pages}
+	\newacro{ALM}{Application Life-cycle Management}
+	\newacro{WMI}{ Windows Management Instrumentation}
+	\newacro{AOP}{Aspect Oriented Programming }
+	\newacro{AJAX}{Asynchronous JavaScript and XML}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	\subfile{Cover/Cover_Page}
+	% Add a link target to the TOC itself
+	\frontmatter
+	\addcontentsline{toc}{chapter}{}
+		
+	\tableofcontents
+	\mainmatter
+	\newpage
+	
+	\chapter{INTRODUCTION}
+	\subfile{chapter1/Introduction}	
+	
+	\chapter{Overall description}
+	\subfile{chapter2/Overall_description}
+	
+	\chapter{SYSTEM FEATURES}
+	\subfile{chapter3/SYSTEM_FEATURES}
+	
+	\chapter{Nonfunctional Requirements}
+	\subfile{chapter4/Nonfunctional_Requirements}	
+	
+	\clearpage
+	\addcontentsline{toc}{chapter}{Glossary}
+	 %default sort is alphabetical
+	\printterms[database=acronym,columns=1,style=align]	
+	\printterms[database=glossary,columns=1,style=align]
+	\clearpage
+	\nocite{*}
+	\addcontentsline{toc}{chapter}{References}
+	\bibliographystyle{plain} 
+	\bibliography{bibfile}
+\end{document}

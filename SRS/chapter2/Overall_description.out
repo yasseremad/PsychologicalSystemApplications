@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.0.1}{Product perspective}{}% 1
+\BOOKMARK [2][-]{subsection.0.1.1}{ Database System:}{section.0.1}% 2
+\BOOKMARK [2][-]{subsection.0.1.2}{client side:}{section.0.1}% 3
+\BOOKMARK [2][-]{subsection.0.1.3}{Server side:}{section.0.1}% 4
+\BOOKMARK [1][-]{section.0.2}{PRODUCT FEATURES}{}% 5
+\BOOKMARK [1][-]{section.0.3}{User characteristics}{}% 6
+\BOOKMARK [2][-]{subsection.0.3.1}{Receptionist}{section.0.3}% 7
+\BOOKMARK [2][-]{subsection.0.3.2}{Specialist}{section.0.3}% 8
+\BOOKMARK [2][-]{subsection.0.3.3}{Client}{section.0.3}% 9
+\BOOKMARK [2][-]{subsection.0.3.4}{Trainee}{section.0.3}% 10
+\BOOKMARK [2][-]{subsection.0.3.5}{Trainer}{section.0.3}% 11
+\BOOKMARK [1][-]{section.0.4}{OPERATING ENVIRONMENT}{}% 12
+\BOOKMARK [1][-]{section.0.5}{DESIGN AND IMPLEMENTATION CONSTRAINTS}{}% 13
+\BOOKMARK [2][-]{subsection.0.5.1}{Schema}{section.0.5}% 14
+\BOOKMARK [2][-]{subsection.0.5.2}{Data flow diagram}{section.0.5}% 15
+\BOOKMARK [1][-]{section.0.6}{ASSUMPTION DEPENDENCIES}{}% 16
+\BOOKMARK [2][-]{subsection.0.6.1}{For Management system}{section.0.6}% 17
+\BOOKMARK [2][-]{subsection.0.6.2}{For clinic system}{section.0.6}% 18
+\BOOKMARK [2][-]{subsection.0.6.3}{For academic system}{section.0.6}% 19

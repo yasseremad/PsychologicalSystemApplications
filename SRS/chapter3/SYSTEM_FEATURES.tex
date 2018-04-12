@@ -1,0 +1,83 @@
+\documentclass[../Psychological_system_web_application.tex]{subfiles}
+
+	\begin{document}
+		
+			\section{reserve and booking}
+				\subsection{DESCRIPTION and PRIORITY}
+					\paragraph{The Inelegant psychological System, classes of seats, personal preferences, prices, and bookings. Of course, this project has a high priority because it is very difficult to come to center without prior reservations.}
+					
+				\subsection{Stimulus/Response Sequences}
+					\paragraph{user should book reservation an appointment from choosing from available appointments and click to submit button to confirm the appointment}
+					
+				\subsection{FUNCTIONAL REQUIREMENTS}
+					\begin{itemize}
+						\item
+							user should filling up simple application of information that are required.
+						\item
+							the \gls{Receptionists} should create an account to the new user and send to him his user-name and his password.
+						\item
+							user after to receive his user name and his password should change and update his information.
+						\item
+							user can choose an appointment from available appointments and submit this appointment to save it in \acr{DB} 
+					\end{itemize}
+					
+					
+			\section{Generate schedule and confirm appointments}
+				\subsection{DESCRIPTION and PRIORITY}
+					\paragraph{after all \gls{psychologist} Enter their appointments and users choose the appropriate his appointment and reserve it the system check in this appointments and if it has conflict appointments, system should solve it to use priority mechanism like oldest user, or first choose this appointment and so on .}
+					
+				\subsection{Stimulus/Response Sequences}
+					\paragraph{system generate schedule per day, take all appointments and date of the day and hours of all appointments and create the schedule.}
+					
+				\subsection{FUNCTIONAL REQUIREMENTS}
+					\begin{itemize}
+						\item
+							system check all appointments and maintain them.
+						\item
+							system take all dates and hours of this appointments and put them in the schedule.
+						\item
+							system take the names of classes that will take sessions on it and put them in the schedule.
+						\item
+							system take specialists' name and client name and put them in the schedule. 
+					\end{itemize}
+					
+					
+				\section{Calculations system}
+				\subsection{DESCRIPTION and PRIORITY}
+					\paragraph{calculations system help \gls{Receptionists} stuff in some calculations like calculate the total incoming per day and week and month, calculate the total issued per day and week and month, and calculate total revenue per day and week and month, and calculate total worked hours per specialist to day and week and month.}
+					
+				\subsection{Stimulus/Response Sequences}
+					\paragraph{after the \gls{Receptionists} enter data or details of sessions the system should calculate their calculations.}
+					
+				\subsection{FUNCTIONAL REQUIREMENTS}
+					\begin{itemize}
+						\item
+							\gls{Receptionists} should enter the fee of all sessions.
+						\item
+							system calculate the total incoming per day.
+						\item
+							system calculate the total issued per day.
+						\item
+							system calculate total revenue per day.
+						
+						\item
+							system calculate total worked hours per \gls{psychologist} to day						
+						\item
+							system calculate the total incoming per week.
+						\item
+							system calculate the total issued per week.
+						\item
+							system calculate total revenue per week.
+						\item
+							system calculate total worked hours per \gls{psychologist} to week. 
+						
+						\item
+							system calculate the total incoming per month.
+						\item
+							system calculate the total issued per month.
+						\item
+							system calculate total revenue per month.
+						\item
+							system calculate total worked hours per \gls{psychologist} to month.					
+					\end{itemize}
+	\end{document}
